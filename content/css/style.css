@@ -1,3 +1,59 @@
-body{
-    
+:root {
+    --dark-glass: rgba(25, 26, 36, 0.8);
+
+
+    --font-style-1: Archivo;
+}
+
+html{
+    font-size: 10px;
+}
+
+body,
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+* html .div-mestre {
+    height: 100%;
+}
+
+main {
+    min-height: inherit;
+}
+
+header {
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    right: 0;
+}
+
+.bg-sword {
+    background: url('../images/wallpaper.jpg') no-repeat center -500px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.img-perfil{
+    width: 128px;
+    height: 128px;
+}
+
+.dark-glass{
+    background-color: var(--dark-glass);
+}
+
+.title-1{
+    font-family: var(--font-style-1);
+    font-size: 4.0rem;
+    color: white;
 }
