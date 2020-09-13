@@ -13,9 +13,19 @@ $(document).ready(
   //inicializa o html adicionando os envetos js especificados abaixo
 	function(){
 
-		$('#curriculo-drive').click(function(){
+		$('#link-curriculo-drive').click(function(){
 
 			window.open('https://drive.google.com/file/d/1oII8nz2yv96z56kXsVVeTmj0M1j_4Tqb/view?usp=sharing', '_blank');
+		});
+
+		$('#link-home').click(function(){
+
+			window.location.href="index.html";
+		});
+
+		$('#link-projetos-estudos').click(function(){
+
+			window.location.href="projetos_estudos.html";
 		});
 
 		//######################################################################################################
