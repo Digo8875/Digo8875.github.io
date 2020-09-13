@@ -1,7 +1,16 @@
 :root {
+    /* Cores */
     --dark-glass: rgba(25, 26, 36, 0.8);
+    --glass: rgba(119, 127, 129,0.5);
+    --ghost-white: #ECECF0;
+    --sunglow: #FFC847;
+    --rich-black: #0E0F19;
+    --raisin-black: #191A24;
+    --raisin-black-2: #2B2D3B;
+    --orange-yellow-cryola: #FFD470;
+    --honey-yellow: #FFB60A;
 
-
+    /* Fonts */
     --font-style-1: Archivo;
 }
 
@@ -32,7 +41,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
-    right: 0;
+    left: 0;
 }
 
 .bg-sword {
@@ -46,14 +55,156 @@ footer {
 .img-perfil{
     width: 128px;
     height: 128px;
+    border:solid 2px var(--rich-black);
+    box-shadow: 2px 2px 4px var(--rich-black);
 }
 
 .dark-glass{
+    width: 100%;
+    height: 100%;
     background-color: var(--dark-glass);
 }
 
-.title-1{
-    font-family: var(--font-style-1);
-    font-size: 4.0rem;
-    color: white;
+.bg-rich-black{
+    background-color: var(--rich-black);
 }
+
+.bg-raisin-black-2{
+    background-color: var(--raisin-black-2);
+}
+
+.bg-ghost-white{
+    background-color: var(--ghost-white);
+}
+
+.special-title-1{
+    font-family: var(--font-style-1);
+    font-size: 3.6rem;
+    color: var(--ghost-white);
+    text-shadow: 4px 4px 4px var(--rich-black);
+}
+
+.special-title-2{
+    font-family: var(--font-style-1);
+    font-size: 2.0rem;
+    color: var(--sunglow);
+    text-shadow: 4px 4px 4px var(--rich-black);
+}
+
+.content-text-1{
+    font-family: var(--font-style-1);
+    font-size: 1.6rem;
+    color: var(--ghost-white);
+    text-shadow: 4px 4px 4px var(--rich-black);
+}
+
+.content-text-2{
+    font-family: var(--font-style-1);
+    font-size: 1.8rem;
+    color: var(--ghost-white);
+    text-shadow: 4px 4px 4px var(--rich-black);
+}
+
+.content-text-3{
+    font-family: var(--font-style-1);
+    font-size: 1.6rem;
+    color: var(--rich-black);
+}
+
+.content-text-4{
+    font-family: var(--font-style-1);
+    font-size: 1.8rem;
+    color: var(--rich-black);
+    font-weight: bold;
+}
+
+.text-copyright{
+    font-family: var(--font-style-1);
+    font-size: 1.2rem;
+    color: var(--ghost-white);
+    text-shadow: 4px 4px 4px var(--rich-black);
+}
+
+.color-sunglow{
+    color: var(--sunglow);
+}
+
+.glass-div-bottom{
+    height: 20px;
+    background-color: var(--glass);
+    border-radius: 0 0 15px 15px;
+}
+
+.glass-div-top{
+    height: 20px;
+    background-color: var(--glass);
+    border-radius: 15px 15px 0 0;
+}
+
+.navbar-digo{
+    background-color: var(--rich-black);
+}
+
+.card{
+    border: transparent;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.card-header{
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.card-body{
+    background-color: transparent !important;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.line-left{
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid var(--ghost-white);
+    position: absolute;
+    left: 0;
+}
+
+.line-right{
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid var(--ghost-white);
+    position: absolute;
+    right: 0;
+}
+
+.btn-navbar{
+    background-color: var(--raisin-black);
+    color: var(--ghost-white);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--sunglow);
+}
+
+.btn-navbar:hover{
+    background-color: var(--orange-yellow-cryola);
+    color: var(--rich-black);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--rich-black);
+}
+
+.btn-navbar:active{
+    background-color: var(--honey-yellow);
+    color: var(--rich-black);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--rich-black);
+}
+
+
+
+/* ###   BTN GitLab   ### */
+.btn-gitlab{color:#fff;background-color:#f50;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab:focus,.btn-gitlab.focus{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab:hover{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab:active,.btn-gitlab.active,.open>.dropdown-toggle.btn-gitlab{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab:active:hover,.btn-gitlab.active:hover,.open>.dropdown-toggle.btn-gitlab:hover,.btn-gitlab:active:focus,.btn-gitlab.active:focus,.open>.dropdown-toggle.btn-gitlab:focus,.btn-gitlab:active.focus,.btn-gitlab.active.focus,.open>.dropdown-toggle.btn-gitlab.focus{color:#fff;background-color:#a83800;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab:active,.btn-gitlab.active,.open>.dropdown-toggle.btn-gitlab{background-image:none}
+.btn-gitlab.disabled:hover,.btn-gitlab[disabled]:hover,fieldset[disabled] .btn-gitlab:hover,.btn-gitlab.disabled:focus,.btn-gitlab[disabled]:focus,fieldset[disabled] .btn-gitlab:focus,.btn-gitlab.disabled.focus,.btn-gitlab[disabled].focus,fieldset[disabled] .btn-gitlab.focus{background-color:#f50;border-color:rgba(0,0,0,0.2)}
+.btn-gitlab .badge{color:#f50;background-color:#fff}
+/* ###################### */
