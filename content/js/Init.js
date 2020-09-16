@@ -13,12 +13,6 @@ $(document).ready(
   //inicializa o html adicionando os envetos js especificados abaixo
 	function(){
 
-		$("#header").load("header.html");
-
-
-		$("#footer").load("footer.html");
-
-
 		$('#link-curriculo-drive').click(function(){
 
 			window.open('https://drive.google.com/file/d/1oII8nz2yv96z56kXsVVeTmj0M1j_4Tqb/view?usp=sharing', '_blank');
@@ -34,6 +28,63 @@ $(document).ready(
 			window.location.href="projetos_estudos.html";
 		});
 
+
+		//######################################################################################################
+		//###############################   BUTTONS DIVS SKILLS   ##############################################
+		$('#div_skill_desenvolvimento_web').hide();
+		$('#close_skill_desenvolvimento_web').hide();
+
+		$('#open_skill_desenvolvimento_web').click(function(){
+
+			$('#div_skill_desenvolvimento_web').show();
+			$('#open_skill_desenvolvimento_web').hide();
+			$('#close_skill_desenvolvimento_web').show();
+		});
+
+		$('#close_skill_desenvolvimento_web').click(function(){
+
+			$('#div_skill_desenvolvimento_web').hide();
+			$('#open_skill_desenvolvimento_web').show();
+			$('#close_skill_desenvolvimento_web').hide();
+		});
+
+
+
+		$('#div_skill_linguagem_programacao').hide();
+		$('#close_skill_linguagem_programacao').hide();
+
+		$('#open_skill_linguagem_programacao').click(function(){
+
+			$('#div_skill_linguagem_programacao').show();
+			$('#open_skill_linguagem_programacao').hide();
+			$('#close_skill_linguagem_programacao').show();
+		});
+
+		$('#close_skill_linguagem_programacao').click(function(){
+
+			$('#div_skill_linguagem_programacao').hide();
+			$('#open_skill_linguagem_programacao').show();
+			$('#close_skill_linguagem_programacao').hide();
+		});
+
+
+
+		$('#div_skill_laravel').hide();
+		$('#close_skill_laravel').hide();
+
+		$('#open_skill_laravel').click(function(){
+
+			$('#div_skill_laravel').show();
+			$('#open_skill_laravel').hide();
+			$('#close_skill_laravel').show();
+		});
+
+		$('#close_skill_laravel').click(function(){
+
+			$('#div_skill_laravel').hide();
+			$('#open_skill_laravel').show();
+			$('#close_skill_laravel').hide();
+		});
 		//######################################################################################################
 	}
 );
