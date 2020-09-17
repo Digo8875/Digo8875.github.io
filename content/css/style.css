@@ -212,8 +212,39 @@ footer {
     border: solid 2px var(--rich-black);
 }
 
+.to-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    text-shadow: none !important;
+
+    background-color: var(--sunglow);
+    color: var(--rich-black);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--rich-black);
+}
+
+.to-top:hover{
+    text-shadow: none !important;
+
+    background-color: var(--rich-black);
+    color: var(--sunglow);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--sunglow);
+}
+
+.to-top:active{
+    background-color: var(--honey-yellow);
+    color: var(--rich-black);
+    border-radius: 5px 5px 5px 5px;
+    border: solid 2px var(--rich-black);
+    text-shadow: none !important;
+}
 
 
+
+/* ######################################################################################## */
 /* ###   BTN GitLab   ### */
 .btn-gitlab{color:#fff;background-color:#f50;border-color:rgba(0,0,0,0.2)}
 .btn-gitlab:focus,.btn-gitlab.focus{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
@@ -223,4 +254,32 @@ footer {
 .btn-gitlab:active,.btn-gitlab.active,.open>.dropdown-toggle.btn-gitlab{background-image:none}
 .btn-gitlab.disabled:hover,.btn-gitlab[disabled]:hover,fieldset[disabled] .btn-gitlab:hover,.btn-gitlab.disabled:focus,.btn-gitlab[disabled]:focus,fieldset[disabled] .btn-gitlab:focus,.btn-gitlab.disabled.focus,.btn-gitlab[disabled].focus,fieldset[disabled] .btn-gitlab.focus{background-color:#f50;border-color:rgba(0,0,0,0.2)}
 .btn-gitlab .badge{color:#f50;background-color:#fff}
-/* ###################### */
+/* ######################################################################################## */
+
+
+/* ######################################################################################## */
+/* ###   Type Writer   ### */
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--sunglow); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .07em; /* Adjust as needed */
+    animation: 
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--sunglow); }
+}
+/* ######################################################################################## */

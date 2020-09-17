@@ -86,5 +86,20 @@ $(document).ready(
 			$('#close_skill_laravel').hide();
 		});
 		//######################################################################################################
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#to-top').fadeIn();
+			} else {
+				$('#to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
 	}
 );
